@@ -97,4 +97,3 @@ export default Parinitha;
 // export default App;
 
 
-/
