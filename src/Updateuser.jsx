@@ -38,6 +38,4 @@ function Updateuser() {
 
   )
 }
-
-
 export default Updateuser;
