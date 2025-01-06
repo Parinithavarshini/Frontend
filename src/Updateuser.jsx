@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import './form.css';
 
 function Updateuser() {
     const [name, setName] = useState('');
