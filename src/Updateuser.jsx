@@ -12,7 +12,7 @@ function Updateuser() {
     
     const update = (e) => {
         e.preventDefault();
-        axios.put(`http://localhost:3000/api/user/update/${id}`,{name,email,password})
+        axios.put(`https://backend-3-h47i.onrender.com/api/user/update/${id}`,{name,email,password})
         .then(result => {
             console.log('User updated successfully:');
             Navigate('/');

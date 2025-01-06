@@ -7,7 +7,7 @@ function User() {
     const [user, setUser] = useState([]); // Initialize state to store users
 
     useEffect(() => {
-        axios.get('http://localhost:3000/api/user/fetch')
+        axios.get('https://backend-3-h47i.onrender.com/api/user/fetch')
             .then(result => {
                 console.log(result.data); // Log the API response to the console
                 setUser(result.data); // Store the response data in state
@@ -18,7 +18,7 @@ function User() {
     }, []);
 
     const deleteuser=(id)=>{
-        axios.delete(`http://localhost:3000/api/user/delete/${id}`)
+        axios.delete(`https://backend-3-h47i.onrender.com/api/user/delete/${id}`)
         .then(result => {
             console.log("deleted successfully");
         })

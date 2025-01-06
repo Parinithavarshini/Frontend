@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from 'axios'
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -10,7 +10,7 @@ const Createuser = () => {
 
     const submit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3000/api/user/create', { name, email, password })
+        axios.post('https://backend-3-h47i.onrender.com/api/user/create', { name, email, password })
             .then(response => {
                 console.log('User created successfully:', response.data);
                 Navigate('/'); // Redirect to the home page
