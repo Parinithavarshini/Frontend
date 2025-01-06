@@ -15,7 +15,7 @@ function Apps()
                     <Route path='/update/:id' element={<Updateuser />}></Route>
                 </Routes>
             </Router>
-            <div>hi</div>
+            <h1>hi</h1>
             
         </div>
     )
